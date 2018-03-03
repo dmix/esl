@@ -1,0 +1,133 @@
+header {
+    background: rgba(120, 128, 143, 0.7);
+    position: absolute;
+    top: 0px;
+    z-index: 200000;
+    width: 100%;
+    border-bottom: 1px solid #1F2633;
+    height: 95px;
+}
+header img {
+    height: 70px;
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    border-top: 2px solid #000000;
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+#navbar > ul > li > a {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+.slide-title {
+    font-family: medium;
+    font-size: 70px;
+    color: #2A3344;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.vertical-align {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-52%);
+    -moz-transform: translateY(-52%);
+    -webkit-transform: translateY(-52%);
+    -ms-transform: translateY(-52%);
+}
+.services-text-box::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+.services-text-box::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+.services-text-box::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border: 0px none rgba(255, 255, 255, 0.0);
+    border-radius: 100px;
+}
+.services-text-box::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+.services-text-box::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.6);
+}
+.services-text-box::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.0);
+    border: 0px none rgba(255, 255, 255, 0.0);
+    border-radius: 100px;
+}
+.services-text-box::-webkit-scrollbar-track:hover {
+    background: rgba(255, 255, 255, 0.0);
+}
+.services-text-box::-webkit-scrollbar-track:active {
+    background: rgba(255, 255, 255, 0.0);
+}
+.services-text-box::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.services-text-box {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 98%, rgba(0, 0, 0, 0) 98%, rgba(0, 0, 0, 0) 100%);
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 500px;
+    overflow-y: scroll;
+}
+.block .block-header .text {
+    font-size: 15px;
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #242434;
+    line-height: 24px;
+    padding: 20px 20px 20px 30px;
+    margin-top: 40px;
+}
+footer .list-styled a,
+footer .list-styled li {
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+.footer-email-address {
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFD238;
+    margin-bottom: 10px;
+}
+.footer-email-address + form {
+    margin-top: 20px;
+}
+.swiper-container {
+    border-bottom: 2px solid #000000;
+}
+
+@media (max-width: 500px) {
+   footer .footer-entry  {
+        min-height: 100px;
+   }
+}

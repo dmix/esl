@@ -1,0 +1,15 @@
+﻿---
+layout: blog_post.html
+---
+<div class='blog-posts'>
+    <div class='section-title'>Blog posts</div>
+    {{#each collections.blog_posts }}
+        <div class='blog-post'>
+            <h1><a href='{{this.permalink}}'>{{this.title}}</a></h1>
+            <article>
+                {{{this.summary}}}
+            </article>
+            <a href='{{this.permalink}}'>Read post »</a>
+        </div>
+    {{/each}}
+</div>

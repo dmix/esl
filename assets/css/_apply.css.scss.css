@@ -1,0 +1,123 @@
+#contact-form {
+    padding: 25px;
+    color: #333;
+}
+
+#contact-form .form-input {
+    background: white;
+    border: 1px solid #aaa;
+}
+#contact-form button {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: uppercase;
+    background: #ffd238;
+    color: #fff;
+    padding: 7px 30px;
+    border: 1px solid #AAA;
+    color: rgba(0,0,0,0.6);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Contact FORM */
+/* ------------------------------------------------------------------------- */
+
+.contact-247 {
+    position: relative;
+    left: 17%;
+    top: -152pt;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.2em;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Contact DETAILS */
+/* ------------------------------------------------------------------------- */
+
+.contact-details-wrapper {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+.contact-details {
+    position: relative;
+    left: 65%;
+    top: -94px;
+}
+.contact-entry {
+    height: 120px;
+    margin-bottom: 20px;
+    -webkit-flex-direction: row; /* Safari */
+    flex-direction: row;
+}
+.contact-entry:first-child {
+    height: 100px;
+}
+
+.contact-entry:last-child {
+    margin-bottom: 0px;
+}
+
+.contact-entry .contact-icon {
+    float: left;
+    height: 70px;
+    padding: 10px;
+    margin-right: 30px;
+    background: #2A3344;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-bottomright: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.contact-entry .title {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 20px !important;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.contact-entry .text {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.contact-entry .description {
+    float: left;
+}
+.contact-entry .description a {
+    color: #FFD238;
+}
+.contact-entry .description a:hover {
+    color: #DAB535;
+}
+
+@media (max-width: 879px) {
+    .contact-details {
+        left: 40% !important;
+    }
+    .contact-247 {
+        left: 5% !important;
+    }
+}
+@media (max-width: 500px) {
+    .contact-247 {
+        display: none;
+    }
+    .contact-details {
+        position: relative;
+        left: 10px !important;
+        top: 0 !important;
+    }
+    .contact-entry .contact-icon {
+        position: relative;
+        top: -100px;
+    }
+}
