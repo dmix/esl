@@ -1,8 +1,23 @@
+// =================================================
+// Directories
+// =================================================
+
 import gulp from 'gulp';
-import gutil from 'gulp-util';
-import plugins from 'gulp-load-plugins';
-import sync from 'gulp-sync';
+import _ from 'gulp-load-plugins';
+
+import gulpsmith from 'gulpsmith';
+import layouts from 'metalsmith-layouts';
+import collections from 'metalsmith-collections';
+import templates from 'metalsmith-in-place';
+import assign from 'lodash.assign';
+import markdown from 'metalsmith-markdown';
+import permalinks from 'metalsmith-permalinks';
+import dateFormatter from 'metalsmith-date-formatter';
+
+import log from 'fancy-log';
 import harmonize from 'harmonize';
+import superstatic from 'superstatic';
+
 
 // Directories
 // -------------------------------------------------
@@ -44,8 +59,6 @@ const fontSource = [
     'assets/fonts/*'
 ];
 const output = './build/';
-const gulpsync = sync(gulp);
-const _ = plugins();
 harmonize(); // Fixes issues with gulpsmith
 
 
@@ -71,17 +84,9 @@ gulp.task('js', () => {
 // HTML
 // -------------------------------------------------
 
-import gulpsmith from 'gulpsmith';
-import layouts from 'metalsmith-layouts';
-import collections from 'metalsmith-collections';
-import templates from 'metalsmith-in-place';
-import htmlmin from 'gulp-html-minifier';
-import frontmatter from 'gulp-front-matter';
-import assign from 'lodash.assign';
-
 gulp.task('html', () => {
     gulp.src(htmlSource)
-        .pipe(frontmatter()).on("data", function(file) {
+        .pipe(_.front-matter()).on("data", function(file) {
             assign(file, file.frontMatter);
             delete file.frontMatter;
         })
@@ -105,19 +110,16 @@ gulp.task('html', () => {
                 }))
         )
         // .on('error', handleError)
-        // .pipe(htmlmin({collapseWhitespace: true}))
+        // .pipe(_.html-minifier({collapseWhitespace: true}))
         .pipe(gulp.dest(output));
 });
 
 // Blog
 // -------------------------------------------------
-import markdown from 'metalsmith-markdown';
-import permalinks from 'metalsmith-permalinks';
-import dateFormatter from 'metalsmith-date-formatter';
 
 gulp.task('blog', () => {
     gulp.src(blogSource)
-        .pipe(frontmatter()).on("data", function(file) {
+        .pipe(_.front-matter()).on("data", function(file) {
             assign(file, file.frontMatter);
             delete file.frontMatter;
         })
@@ -148,8 +150,6 @@ gulp.task('blog', () => {
 // CSS
 // -------------------------------------------------
 
-import nano from 'gulp-cssnano';
-
 gulp.task('csslib', () => {
     gulp.src(cssVendor)
         .pipe(_.concat('lib.css'))
@@ -160,7 +160,7 @@ gulp.task('csslib', () => {
 gulp.task('css', () => {
     gulp.src(cssSource)
         .pipe(_.concat('fortedefence.css'))
-        .pipe(nano())
+        .pipe(_.nano())
         .on('error', handleError)
         .pipe(gulp.dest(output + '/css'))
         .pipe(_.size({title: 'styles'}));
@@ -190,7 +190,6 @@ gulp.task('fonts', () =>
 // Server
 // -------------------------------------------------
 
-import superstatic from 'superstatic';
 const server = superstatic({
     root: output,
     clean_urls: true,
@@ -230,7 +229,7 @@ gulp.task('watch', () => {
     gulp.watch(imgSource,  ['images', 'server-reload', 'server']);
 });
 
-gulp.task('build', gulpsync.async([
+gulp.task('build', _.async([
     'html',
     'blog',
     'images',
@@ -249,8 +248,8 @@ gulp.task('default', ['build', 'server', 'watch']);
 // -------------------------------------------------
 
 function handleError(err) {
-   gutil.log(err);
-    _.notify({
+    log.error(err);
+    gulp.notify({
         message: err
     });
 }
