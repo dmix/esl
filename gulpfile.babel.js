@@ -217,6 +217,24 @@ gulp.task('server', () => {
     })
 })
 
+// Deploy
+// -------------------------------------------------
+
+// TODO: translate bash to gulp
+gulp.task('deploy', () => {
+  // echo "Deploying fortedefence.com..."
+  //
+  // gulp build
+  // BUILD_FOLDER=build
+  // rm -f $BUILD_FOLDER/img#<{(|
+  // cp -f assets/images#<{(| $BUILD_FOLDER/img/
+  // cp -f .bitballoon $BUILD_FOLDER
+  // cd $BUILD_FOLDER
+  // bitballoon deploy || exit 1
+  // cd ..
+  //
+  // echo "> Deploy completed!"
+})
 
 // Tasks
 // -------------------------------------------------
