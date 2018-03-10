@@ -1,0 +1,16 @@
+session_name: esl
+start_directory: ~/dev/_html/esl
+windows:
+  - window_name: server
+    layout: main-vertical
+    panes:
+      - gulp server
+      - gulp build && gulp watch
+  - window_name: editor
+    focus: true
+    panes:
+      - nvim TODO.tasks
+  - window_name: terminal
+    panes:
+      - /usr/bin/open -a "/Applications/Google Chrome.app" 'http://localhost:9000/'
+
