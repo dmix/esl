@@ -15,7 +15,7 @@
 @include foundation-global-styles;
 // @include foundation-grid;
 // @include foundation-flex-grid;
-@include foundation-xy-grid-classes;
+// @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -53,6 +53,7 @@
 @include foundation-visibility-classes;
 // @include foundation-float-classes;
 @include foundation-flex-classes;
+@include foundation-flex-grid;
 
 // @include foundation-prototype-classes;
 

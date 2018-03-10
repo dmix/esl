@@ -3,7 +3,8 @@
 // =================================================
 
 import gulp from 'gulp'
-import _ from 'gulp-load-plugins'
+import plugins from 'gulp-load-plugins'
+const _ = plugins()
 
 import gulpsmith from 'gulpsmith'
 import layouts from 'metalsmith-layouts'
@@ -32,22 +33,31 @@ const jsSource = [
     'assets/js/**/*.js',
 ]
 
-const htmlSource = [
+const htmlWatchSource = [
     'src/*.html',
     'src/**/*.html',
     'src/blog_posts/*.md',
 ]
 
+const htmlSource = [
+    'src/*.html',
+    'src/blog_posts/*.md',
+]
 const blogSource = 'src/blog_posts/*.md'
 
 const cssVendor = [
     'node_modules/foundation-sites/scss',
-    'node_modules/motion-ui/src'
+    'node_modules/motion-ui/src',
     'assets/vendor/css',
 ]
 
+const cssWatchSource = [
+    'assets/css/*.scss',
+    'assets/css/**/*.scss',
+]
+
 const cssSource = [
-    'assets/css/app.css.scss',
+    'assets/css/app.scss',
 ]
 
 const imgSource = [
@@ -69,15 +79,16 @@ harmonize() // Fixes issues with gulpsmith
 
 // Javascript
 // -------------------------------------------------
+
 gulp.task('jslib', () => {
-    gulp.src(jsVendor)
+    return gulp.src(jsVendor)
         .pipe(_.concat('lib.js'))
         .pipe(gulp.dest(output + '/js'))
         .pipe(_.size({title: 'js'}))
 })
 
 gulp.task('js', () => {
-    gulp.src(jsSource)
+    return gulp.src(jsSource)
         .pipe(_.concat('fortedefence.js'))
         .pipe(_.uglify())
         .on('error', handleError)
@@ -90,8 +101,8 @@ gulp.task('js', () => {
 // -------------------------------------------------
 
 gulp.task('html', () => {
-    gulp.src(htmlSource)
-        .pipe(_.front-matter()).on("data", function(file) {
+    return gulp.src(htmlSource)
+        .pipe(_.frontMatter()).on("data", function(file) {
             assign(file, file.frontMatter)
             delete file.frontMatter
         })
@@ -107,24 +118,28 @@ gulp.task('html', () => {
                     directory: 'src/layouts',
                     engine: 'handlebars',
                     partials: 'src/partials',
-                    default: 'application.html'
+					partialExtension: '.html',
+					pattern: '**/*.html',
+                    default: 'application.html',
                 }))
                 .use(templates({
                     engine: 'handlebars',
                     partials: 'src/partials',
+					partialExtension: '.html',
+					pattern: '**/*.html',
                 }))
         )
-        // .on('error', handleError)
-        // .pipe(_.html-minifier({collapseWhitespace: true}))
+        .on('error', handleError)
         .pipe(gulp.dest(output))
+        // .pipe(_.htmlMinifier({collapseWhitespace: true}))
 })
 
 // Blog
 // -------------------------------------------------
 
 gulp.task('blog', () => {
-    gulp.src(blogSource)
-        .pipe(_.front-matter()).on("data", function(file) {
+    return gulp.src(blogSource)
+        .pipe(_.frontMatter()).on("data", function(file) {
             assign(file, file.frontMatter)
             delete file.frontMatter
         })
@@ -156,7 +171,7 @@ gulp.task('blog', () => {
 // -------------------------------------------------
 
 gulp.task('css', () => {
-    gulp.src(cssSource)
+    return gulp.src(cssSource)
         .pipe(_.sass({
             includePaths: cssVendor,
             outputStyle: 'compressed' // if css compressed **file size**
@@ -165,7 +180,7 @@ gulp.task('css', () => {
         .pipe(_.autoprefixer({
             browsers: ['last 2 versions', 'ie >= 10']
         }))
-        .pipe(_.nano())
+        .pipe(_.cssnano())
         .on('error', handleError)
         .pipe(gulp.dest(output + '/css'))
         .pipe(_.size({title: 'styles'}))
@@ -176,7 +191,7 @@ gulp.task('css', () => {
 // -------------------------------------------------
 
 gulp.task('images', () => {
-    gulp.src(imgSource)
+    return gulp.src(imgSource)
         // .pipe(_.imagemin({
         //   progressive: true,
         //   interlaced: true
@@ -185,35 +200,35 @@ gulp.task('images', () => {
         .pipe(_.size({title: 'images'}))
 })
 
-gulp.task('fonts', () =>
-    gulp.src(fontSource)
+gulp.task('fonts', () => {
+    return gulp.src(fontSource)
         .pipe(gulp.dest(output + '/fonts'))
         .pipe(_.size({title: 'fonts'}))
-)
+})
 
 
 // Server
 // -------------------------------------------------
 
-const server = superstatic({
-    root: output,
-    clean_urls: true,
-    port: 9000,
-    config: {
-        root: output
-    },
-    gzip: true,
-    debug: true
-})
+const serverOptions = {
+	clean_urls: true,
+	port: 9000,
+	gzip: true,
+	debug: true,
+	cwd: output,
+	config: {
+		// root: output,
+	}
+}
+const server = superstatic.server(serverOptions)
 
-
-gulp.task('server-reload', () => {
-    server.close()
-})
+// gulp.task('server-reload', () => {
+//     server.close()
+// })
 
 gulp.task('server', () => {
     server.listen(() => {
-        console.log( 'Server running on port ' + server.port )
+        console.log( 'Server running on port ' + serverOptions.port )
     })
 })
 
@@ -239,31 +254,18 @@ gulp.task('deploy', () => {
 // Tasks
 // -------------------------------------------------
 
-gulp.task('complete', () => {
-    _.notify({
-        message: 'Gulp build complete'
-    })
-})
-
 gulp.task('watch', () => {
-    gulp.watch(cssSource,  ['css',    'server-reload', 'server'])
-    gulp.watch(jsSource,   ['js',     'server-reload', 'server'])
-    gulp.watch(htmlSource, ['html',   'server-reload', 'server'])
-    gulp.watch(imgSource,  ['images', 'server-reload', 'server'])
+    gulp.watch(cssWatchSource,  gulp.series('css',    ))
+    gulp.watch(jsSource,   gulp.series('js',     ))
+    gulp.watch(htmlWatchSource, gulp.series('html',   ))
+    gulp.watch(imgSource,  gulp.series('images', ))
 })
 
-gulp.task('build', _.async([
-    'html',
-    'blog',
-    'images',
-    'fonts',
-    'css',
-    'jslib',
-    'js',
-    'complete'
-]))
-
-gulp.task('default', ['build', 'server', 'watch'])
+gulp.task('build', gulp.series(
+	gulp.parallel('html', 'blog', 'images', 'fonts', 'css', 'jslib', 'js')
+))
+   
+gulp.task('default', gulp.series(gulp.parallel('build', 'server', 'watch')))
 
 
 // Helpers
@@ -271,7 +273,7 @@ gulp.task('default', ['build', 'server', 'watch'])
 
 function handleError(err) {
     log.error(err)
-    gulp.notify({
-        message: err
-    })
+    // gulp.notify({
+    //     message: err
+    // })
 }
