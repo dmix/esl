@@ -1,14 +1,9 @@
 TODO
 
 Set up layout:
-✔ create max width container for content block @done
-✔ Populate Navigation @done
-✔ Replace logo with icon + ESI @done
-✔ Create v1 headline box: headline centered @done
-✔ Create v2 headline box: headline + CTA button @done
-☐ add subpage layout + frontmatter content for headline   
-☐ add markdown content 
-☐ add footer template
+☐ Port handlebars -> nunjucks
+☐ Add content to Footer
+☐ load markdown content for about.html
 
 Theme:
 ☐ create color scheme
@@ -21,3 +16,14 @@ Copywriting:
 ☐ Headline placeholder text
 ☐ 
 
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n
+Archive:
+    ✔ create max width container for content block @done
+    ✔ Populate Navigation @done
+    ✔ Replace logo with icon + ESI @done
+    ✔ Create v1 headline box: headline centered @done
+    ✔ Create v2 headline box: headline + CTA button @done
+    ✔ add subpage layout  @done
+    ✔ frontmatter content for headline    @done
+    ✔ add footer template @done
+    ✔ add footer list partial too nav/footer @done
