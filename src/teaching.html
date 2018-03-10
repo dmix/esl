@@ -2,24 +2,12 @@
 title: Teaching English in China
 ---
 
-<article>
-    <header class='callout large primary headline headline-secondary'>
-        <div class='row column'>
-            <div class='medium-12 columns'>
-                <h1>TEACHIN<span>G</span> ENGLISH</h1>
-                <h3>AT OUR SCHOOLS</h3>
-            </div>
-        </div>
-    </header>
+{% extends "src/layouts/subpage.html" %}
 
-    <header class="callout large primary headline-secondary">
-        <div class="row column text-center">
-            <h1>{{title}}</h1>
-        </div>
-    </header>
+{% block headline %}
+    <h1>TEACHIN<span>G</span> ENGLISH</h1>
+    <h3>AT OUR SCHOOLS</h3>
+{% endblock %}
 
-    <section class="row" id="content">
-        <main class="medium-12 columns">
-        </main>
-    </section>
-</article>
+{% block content %}
+{% endblock %}

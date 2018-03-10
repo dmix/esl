@@ -2,30 +2,14 @@
 title: Cities
 ---
 
-<article>
-    <header class='callout large primary headline headline-secondary'>
-        <div class='row column'>
-            <div class='medium-12 columns'>
-                <h1>Citie<span>s</span></h1>
-                <h3>With Our Schools</h3>
-            </div>
-        </div>
-    </header>
+{% extends "src/layouts/subpage.html" %}
 
-    <section class="row" id="content">
-        <main class="medium-12 columns">
-            <div class='blog-posts'>
-                <div class='section-title'>Blog posts</div>
-                {{#each collections.blog_posts }}
-                    <div class='blog-post'>
-                        <h1><a href='{{this.permalink}}'>{{this.title}}</a></h1>
-                        <article>
-                            {{{this.summary}}}
-                        </article>
-                        <a href='{{this.permalink}}'>Read post »</a>
-                    </div>
-                {{/each}}
-            </div>
-        </main>
-    </section>
-</article>
+{% block headline %}
+    <h1>Citie<span>s</span></h1>
+    <h3>With Our Schools</h3>
+{% endblock %}
+
+{% block content %}
+    <div class='blog-posts'>
+    </div>
+{% endblock %}

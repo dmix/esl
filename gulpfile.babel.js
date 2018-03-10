@@ -114,16 +114,8 @@ gulp.task('html', () => {
                         sortBy: 'date',
                     }
                 }))
-                .use(layouts({
-                    directory: 'src/layouts',
-                    engine: 'handlebars',
-                    partials: 'src/partials',
-					partialExtension: '.html',
-					pattern: '**/*.html',
-                    default: 'application.html',
-                }))
                 .use(templates({
-                    engine: 'handlebars',
+                    engine: 'nunjucks',
                     partials: 'src/partials',
 					partialExtension: '.html',
 					pattern: '**/*.html',

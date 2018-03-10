@@ -2,18 +2,12 @@
 title: About
 ---
 
-<article>
-    <header class='callout large primary headline headline-secondary'>
-        <div class='row column'>
-            <div class='medium-12 columns'>
-                <h1>Abou<span>t</span></h1>
-                <h3>Our School</h3>
-            </div>
-        </div>
-    </header>
+{% extends "src/layouts/subpage.html" %}
 
-    <section class="row" id="content">
-        <main class="medium-12 columns">
-        </main>
-    </section>
-</article>
+{% block headline %}
+    <h1>Abou<span>t</span></h1>
+    <h3>Our School</h3>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
