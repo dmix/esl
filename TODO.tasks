@@ -4,8 +4,10 @@ Set up layout:
 ✔ create max width container for content block @done
 ✔ Populate Navigation @done
 ✔ Replace logo with icon + ESI @done
-☐ Create v1 headline box: headline centered
-☐ Create v2 headline box: headline + CTA button
+✔ Create v1 headline box: headline centered @done
+✔ Create v2 headline box: headline + CTA button @done
+☐ add subpage layout + frontmatter content for headline   
+☐ add markdown content 
 ☐ add footer template
 
 Theme:
