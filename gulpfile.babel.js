@@ -35,7 +35,8 @@ const jsSource = [
 
 const htmlWatchSource = [
     'src/*.html',
-    'src/**/*.html',
+    'src/partials/*.html',
+    'src/layouts/*.html',
     'src/blog_posts/*.md',
 ]
 

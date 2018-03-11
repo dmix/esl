@@ -1,0 +1,25 @@
+.highlights {
+  background: white;
+  padding: 3rem;
+  margin-bottom: 2rem;
+
+  .highlights--box {
+    .highlights--box-icon {
+      margin-top: -3px;
+      color: #c1c8d2;
+      font-size: 3rem;
+    }
+    .highlights--box-title  {
+      font-family: $font-family-primary;
+
+      h3 {
+        margin-bottom: -0.25rem;
+        color: $primary-color;
+      }
+      h5 {
+        color: #c1c8d2;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

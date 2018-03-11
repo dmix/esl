@@ -1,25 +1,15 @@
-$highlight: #fed238;
-$dark-blue: #04293e;
-$nav-color: #78808f;
-$font-family-primary: Open Sans,Helvetica,Arial,sans-serif;
-$font-family-secondary: Open Sans Condensed,Open Sans,Helvetica,Arial,sans-serif;
-
-body {
-  background: #f7f7f7;
-}
-
 section#content {
   padding: 1rem 0;
 }
 
 nav {
   // background-color: $nav-color;
-  background: hsla(0, 0%, 100%, 1);
-  position: absolute;
-  top: 0;
-  z-index: 7;
+  // position: absolute;
+  // top: 0;
+  // z-index: 7;
   width: 100%;
-  border-bottom: 1px solid #d9d9d9;
+  background: $theme--nav-bg;
+  border-bottom: $theme--nav-border; 
 }
 
 .top-bar {
@@ -34,77 +24,34 @@ nav {
       padding-left: 0;
     }
     a {
-      color: $dark-blue;
-      text-transform: uppercase;
+      color: $primary-color;
       font-family: $font-family-secondary;
       font-weight: 700;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+
     }
     a.button-apply {
-      background-color: $dark-blue;
+      background-color: $primary-color;
       border-radius: 5px;
-      color: white;
+      color: $white;
     }
   }
 }
 
 .logo {
-  .logo-icon {
+  .logo--icon {
     display: inline-block;
     height: 50px;
     margin: -10px 0;
   }
 
-  .logo-title {
+  .logo--title {
     display: inline-block;
     font-size: 1.5rem;
     position: relative;
     top: 5px;
+    color: $primary-color;
   }
 }
 
-.callout {
-  &.headline {
-    border: none;
-    border-bottom: 1px solid #f2f2f2;
-    overflow: hidden;
-    h1, h3 {
-      text-transform: uppercase;
-      font-family: $font-family-primary; 
-      letter-spacing: -2px;
-      span {
-        color: $highlight;
-      }
-    }
-    h3 {
-      font-weight: 500;
-      font-size: 2rem;
-      display: block;
-      line-height: 30px;
-    }
-    h1 {
-      font-weight: 600;
-      font-size: 3.5rem;
-      line-height: 70px;
-      color: #242434;
-      position: relative;
-    }
-    a.button {
-      border-radius: 5px;
-      font-family: $font-family-secondary;
-      text-transform: uppercase;
-    }
-  }
-  &.headline.headline-primary {
-    padding: 13rem 0 10rem;
-    background-color: white;
-    h3 {
-      color: #7d7d7d;
-    }
-  }
-  &.headline.headline-secondary {
-    // background-size: cover;
-    // background-position: center center;
-    padding: 9rem 0 6rem;
-  }
-}

@@ -1,0 +1,54 @@
+.callout {
+  &.headline {
+    border: none;
+    overflow: hidden;
+    h1, h3 {
+      font-family: $font-family-primary; 
+      letter-spacing: -2px;
+      span {
+        color: $warning-color;
+      }
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 1.8em;
+      display: block;
+      line-height: 2.25rem;
+      opacity: 0.4;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 3.5rem;
+      line-height: 70px;
+      color: $primary-color;
+      position: relative;
+    }
+    a.button {
+      border-radius: 5px;
+      font-family: $font-family-secondary;
+      font-size: 1.1rem;
+      // text-transform: uppercase;
+      font-family: Helvetica, sans-serif;
+    }
+    a.button.primary {
+      background-color: $primary-color;
+    }
+  }
+  &.headline.headline--primary {
+    padding: 10rem 0 9rem;
+    border-bottom: 1px solid #f2f2f2;
+    background-color: $theme--headline-primary-bg;
+    border-bottom: $theme--headline-primary-border;
+    margin-bottom: 0;
+
+    h3 {
+      margin-bottom: 2rem;
+    }
+  }
+  &.headline.headline--secondary {
+    background-color: $theme--headline-secondary-bg;
+    border-bottom: $theme--headline-secondary-border;
+    padding: 5rem 0;
+  }
+}

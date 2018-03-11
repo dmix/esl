@@ -7,7 +7,7 @@ $footer-logo-bg: #f1f1f1;
   padding: 0rem 0 0;
   margin-top: 4rem;
 
-  .footer-menu-social a {
+  .footer--menu-social a {
     color: $white;
   }
 
@@ -26,19 +26,19 @@ $footer-logo-bg: #f1f1f1;
   }
 }
 
-.footer-name {
+.footer--name {
   color: $white;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
-.footer-title {
+.footer--title {
   color: $white;
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
 
-.footer-block {
+.footer--block {
   display: flex;
   margin-bottom: 1rem;
 
@@ -53,21 +53,21 @@ $footer-logo-bg: #f1f1f1;
   }
 }
 
-.footer-logo {
+.footer--logo {
   background: lighten($footer-bg, 60%);
   background: white;
   padding: 2rem 0;
   display: block;
-  .footer-logo-icon {
+  .footer--logo-icon {
     height: 165px;
   }
 }
 
-.footer-info {
+.footer--info {
   padding: 3rem 0 1.5rem;
 }
 
-.footer-bottom {
+.footer--bottom {
   background: darken($footer-bg, 20%);
   padding: 1rem 0;
 
@@ -76,11 +76,15 @@ $footer-logo-bg: #f1f1f1;
     margin-bottom: 0;
   }
 
-  .footer-bottom-links {
+  .footer--bottom-links {
     justify-content: flex-end;
 
     a {
       color: lighten($footer-bg, 40%);
+    }
+
+    a.button {
+      color: lighten($footer-bg, 80%);
     }
 
     @include breakpoint(medium down) {

@@ -1,16 +1,16 @@
 {% include "src/partials/_head.html" %}
 
-<body>
+<body class='layout subpage'>
     <!-- Navigation -->
-    <div class='layout-nav'>
+    <div class='layout--nav'>
       {% include "src/partials/_nav.html" %}
     </div>
 
-    <div class='layout-contents'>
-      <!-- Headline Primary  -->
-      <header class='callout large primary headline headline-secondary'>
+    <div class='layout--contents'>
+      <!-- Headline Secondary -->
+      <header class='callout large primary headline headline--secondary'>
           <div class='row column'>
-              <div class='medium-12 columns'>
+              <div class='medium-12 columns text-center'>
                   {% block headline %}{% endblock %}
               </div>
           </div>
@@ -18,8 +18,8 @@
 
       <!-- Contents -->
       <article>
-          <section class="row" id="content">
-              <main class="medium-12 columns">
+          <section class='row' id='content'>
+              <main class='medium-12 columns subpage--content'>
                 {% block content %}{% endblock %}
               </main>
           </section>
@@ -27,7 +27,7 @@
     </div>
 
     <!-- Footer -->
-    <div class='layout-footer'>
+    <div class='layout--footer'>
       {% include "src/partials/_footer.html" %}
     </div>
 
