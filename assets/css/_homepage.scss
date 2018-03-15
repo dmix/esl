@@ -2,9 +2,15 @@ $three-up-width: 900px;
 $testimonial-light-blue: rgba($primary-color, 0.25);
 $testimonial-bg: $testimonial-light-blue;
 
+.homepage--about {
+  .homepage--about-blurb {
+    font-size: 1.1rem;
+  }
+}
+
 .homepage--three-up {
   text-align: center;
-  padding: 2rem 0;
+  margin: 2rem 0;
 
   .row {
     max-width: $three-up-width;
@@ -18,11 +24,16 @@ $testimonial-bg: $testimonial-light-blue;
     }
   }
 
-  .fa {
+  .fas, svg {
     font-size: 3rem;
     margin-bottom: 1rem;
     color: $primary-color;
   }
+
+}
+.homepage--three-up-desc {
+  text-align: left;
+  font-size: 1.1rem;
 }
 
 .homepage--three-up-headline {
@@ -32,6 +43,12 @@ $testimonial-bg: $testimonial-light-blue;
 
 
 .homepage--testimonials {
+  margin-top: 2rem;
+
+  .homepage--testimonial {
+    margin: 0 0rem 2rem 0;
+  }
+
   .homepage--testimonial-quote {
     background: $testimonial-bg;
     padding: $global-padding;

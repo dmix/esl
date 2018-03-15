@@ -174,14 +174,14 @@ gulp.task('css', () => {
     return gulp.src(cssSource)
         .pipe(_.sass({
             includePaths: cssVendor,
-            outputStyle: 'compressed' // if css compressed **file size**
+            // outputStyle: 'compressed' // if css compressed **file size**
         })
         .on('error', _.sass.logError))
-        .pipe(_.autoprefixer({
-            browsers: ['last 2 versions', 'ie >= 10']
-        }))
-        .pipe(_.cssnano())
-        .on('error', handleError)
+        // .pipe(_.autoprefixer({
+        //     browsers: ['last 2 versions', 'ie >= 10']
+        // }))
+        // .pipe(_.cssnano())
+        // .on('error', handleError)
         .pipe(gulp.dest(output + '/css'))
         .pipe(_.size({title: 'styles'}))
 })
@@ -256,9 +256,9 @@ gulp.task('deploy', () => {
 
 gulp.task('watch', () => {
     gulp.watch(cssWatchSource,  gulp.series('css',    ))
-    gulp.watch(jsSource,   gulp.series('js',     ))
+    gulp.watch(jsSource,        gulp.series('js',     ))
     gulp.watch(htmlWatchSource, gulp.series('html',   ))
-    gulp.watch(imgSource,  gulp.series('images', ))
+    gulp.watch(imgSource,       gulp.series('images', ))
 })
 
 gulp.task('build', gulp.series(
