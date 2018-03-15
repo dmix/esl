@@ -10,6 +10,40 @@ title: Cities
 {% endblock %}
 
 {% block content %}
-    <div class='blog--posts'>
+
+<p>
+With our program operating in ten cities currently, you have the option of teaching in the environment and university campus of your choice. In your application, please indicate your top three choices for which campus you’d like to teach at: 
+</p>
+
+
+<div class="locations">
+    <div class="location---header">
+        <h6 class="location--header-title">
+            Cities
+        </h6>
+    </div>
+    <div class="row location">
+        {% asyncAll city in data.cities.cities %}
+            <div class="small-12 medium-12 columns about-people">
+                <div class="location--avatar">
+                    <img class="location--avatar-image" src="https://i.imgur.com/UPVxPjb.jpg" alt="Kishore Kumar">
+                </div>
+                <div class="location--author">
+                    <p class="location--author-name">
+                        {{ city.name }}
+                    </p>
+                    <p class="location--author-location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        {{ city.location }}
+                    </p>
+                </div>        
+            </div>
+        {% endall %}
+    </div>
+</div>
+
+<p>
+(We can perhaps make a separate page for each of the cities and have a gallery with pictures from each of those schools.)
+</p>
     </div>
 {% endblock %}

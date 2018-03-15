@@ -1,17 +1,17 @@
 TODO
 
 Layout:
-☐ Add nav links partials to top/footer @done
-☐ Add content to Footer @done
+☐ plan out content for homepage @done
+    ✔ add second layer design to primary headline @done
+☐ add content to homepage via subpages
 ☐ create color scheme
 ☐ finalize fonts for nav + headline + body
 ☐ style headline button + text
-☐ style subpage headline
-☐ plan out content for homepage
-    ☐ add second layer design to primary headline
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n
 Archive:
+
+    ☐ Add content to Footer @done
     ✔ Port handlebars -> nunjucks @done
     ✔ style navigation @done
     ✔ add placeholder background for headline @done

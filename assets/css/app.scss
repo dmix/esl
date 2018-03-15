@@ -66,8 +66,14 @@
 // --------------------------------------------------------------------------
 
 @import 'layout';
-@import 'headline';
-@import 'footer';
 @import 'subpage';
-@import 'homepage';
+
+// Components
+@import 'headline';
 @import 'highlights';
+@import 'footer';
+@import 'timeline';
+
+// Pages
+@import 'homepage';
+@import 'cities';

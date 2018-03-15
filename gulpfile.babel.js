@@ -14,6 +14,7 @@ import assign from 'lodash.assign'
 import markdown from 'metalsmith-markdown'
 import permalinks from 'metalsmith-permalinks'
 import dateFormatter from 'metalsmith-date-formatter'
+import data from 'metalsmith-data'
 
 import log from 'fancy-log'
 import harmonize from 'harmonize'
@@ -37,13 +38,16 @@ const htmlWatchSource = [
     'src/*.html',
     'src/partials/*.html',
     'src/layouts/*.html',
+    'src/homepage/*.html',
     'src/blog_posts/*.md',
 ]
 
 const htmlSource = [
     'src/*.html',
+    'src/homepage/*.html',
     'src/blog_posts/*.md',
 ]
+
 const blogSource = 'src/blog_posts/*.md'
 
 const cssVendor = [
@@ -109,6 +113,9 @@ gulp.task('html', () => {
         })
         .pipe(
             gulpsmith()
+                .use(data({
+                    cities: './src/data.json',
+                }))
                 .use(collections({
                     blog_posts: {
                         pattern: 'blog_posts/*.md',

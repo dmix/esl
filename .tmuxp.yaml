@@ -11,7 +11,7 @@ windows:
     focus: true
     panes:
       - nvim TODO.tasks
-      - /usr/bin/open -a "/Applications/Google Chrome.app" 'http://localhost:9000'
+      - /usr/bin/open -a "/Applications/Google Chrome.app" 'http://localhost:9000' && nvim ~/notes/esl.md
   - window_name: editor
     panes:
       - nvim .

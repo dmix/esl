@@ -895,8 +895,8 @@ $theme--nav-border:                 1px solid $medium-gray;
 $theme--nav-link:                   #9facbd;
 $theme--headline-primary-bg:        white;
 $theme--headline-primary-border:    1px solid darken($theme--headline-primary-bg, 5%);
-$theme--headline-secondary-bg:      #D7ECFA;
-$theme--headline-secondary-border:  1px solid darken($theme--headline-secondary-bg, 0%);
+$theme--headline-secondary-bg:      #ededed;
+$theme--headline-secondary-border:  1px solid darken($theme--headline-secondary-bg, 5%);
 
 // $highlight:                 #fed238;
 // $dark-blue:                 #04293e;
@@ -907,4 +907,4 @@ $theme--headline-secondary-border:  1px solid darken($theme--headline-secondary-
 $font-family-primary: Open Sans,Helvetica,Arial,sans-serif;
 $font-family-secondary: Open Sans Condensed,Open Sans,Helvetica,Arial,sans-serif;
 $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$body-font-family: $font-family-primary;
+

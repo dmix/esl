@@ -1,0 +1,44 @@
+{
+  "cities": [
+    {
+      "name": "Yantai University",
+      "location": "Yantai, Shandong Province, China"
+    },
+    {
+      "name": "Shandong Technology and Business University",
+      "location": "Yantai, Shandong Province, China"
+    },
+    {
+      "name": "Chongqing Normal University",
+      "location": "Chongqing, China"
+    },
+    {
+      "name": "Chongqing Technology and Business University",
+      "location": "Chongqing, China"
+    },
+    {
+      "name": "Hunan Institute of Information Technology",
+      "location": "Changsha, Hunan Province, China"
+    },
+    {
+      "name": "Liaoning Normal University",
+      "location": "Dalian, Liaoning Province, China"
+    },
+    {
+      "name": "Dalian Ocean University",
+      "location": "Dalian, Liaoning Province, China"
+    },
+    {
+      "name": "Henan University of Technology",
+      "location": "Zhengzhou, Henan Province, China"
+    },
+    {
+      "name": "Henan University of Economics and Law",
+      "location": "Zhengzhou, Henan Province, China"
+    },
+    {
+      "name": "Beijing Institute of Petrochemical Technology",
+      "location": "Beijing, China"
+    }
+  ]
+}

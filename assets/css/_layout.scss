@@ -2,6 +2,19 @@ section#content {
   padding: 1rem 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-primary;
+}
+
+article {
+  max-width: 1200px;
+  margin: auto;
+
+  h4 {
+    font-weight: 700;
+  }
+}
+
 nav {
   // background-color: $nav-color;
   // position: absolute;

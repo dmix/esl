@@ -1,0 +1,38 @@
+<section class='homepage--about'>
+    <div class='row'>
+        <div class='medium-6 columns'>
+            <h4>About EIE</h4>
+            <p>Education in English (EIE) is an English program based in China that aims to provide Chinese students with the English speaking, writing, and comprehension skills they need in an increasingly globalized world. The program was first established in 1988 in Toronto, Canada, at a time when China was just beginning to open its doors to the West after decades of seclusion during the Cultural Revolution. The founders of the company recognized the importance of learning English for Chinese students looking to expand their career opportunities both within China and on the international stage.
+            </p>
+            <a href='about.html'>Read more &rarr;</a>
+        </div>
+        <div class='medium-6 columns'>
+            <h4>Locations</h4>
+
+            <div class="row locations locations-highlight">
+                {% asyncEach city in data.cities.cities.slice(0,3) %}
+                    <div class="small-12 medium-12 columns">
+                        <div class='location'>
+                            <div class='location--block'>
+                                <div class="location--avatar">
+                                    <img class="location--avatar-image" src="https://i.imgur.com/UPVxPjb.jpg" alt="Kishore Kumar">
+                                </div>
+                                <div class="location--author">
+                                    <p class="location--author-name">
+                                        {{ city.name }}
+                                    </p>
+                                    <p class="location--author-location">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        {{ city.location }}
+                                    </p>
+                                </div>        
+                            </div>        
+                        </div>        
+                    </div>
+                {% endeach %}
+            </div>
+            <a href='locations.html'>More locations &rarr;</a>
+ 
+        </div>
+    </div>
+</section>
