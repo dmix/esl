@@ -16,26 +16,30 @@ With our program operating in ten cities currently, you have the option of teach
 </p>
 
 
-<div class="locations">
-    <div class="location---header">
-        <h6 class="location--header-title">
-            Cities
-        </h6>
-    </div>
-    <div class="row location">
+<div class="locations locations-list">
+    <!-- <div class="location&#45;&#45;&#45;header"> -->
+    <!--     <h6 class="location&#45;&#45;header&#45;title"> -->
+    <!--         Cities -->
+    <!--     </h6> -->
+    <!-- </div> -->
+    <div class="row">
         {% asyncAll city in data.cities.cities %}
-            <div class="small-12 medium-12 columns about-people">
-                <div class="location--avatar">
-                    <img class="location--avatar-image" src="{{ city.image }}" alt="{{ city.name }}">
-                </div>
-                <div class="location--author">
-                    <p class="location--author-name">
-                        {{ city.name }}
-                    </p>
-                    <p class="location--author-location">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        {{ city.location }}
-                    </p>
+            <div class="small-12 medium-6 columns">
+                <div class='location'>
+                    <div class='location--block'>
+                        <div class="location--avatar">
+                            <img class="location--avatar-image" src="{{ city.image }}" alt="Kishore Kumar">
+                        </div>
+                        <div class="location--author">
+                            <p class="location--author-name">
+                                {{ city.name }}
+                            </p>
+                            <p class="location--author-location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                {{ city.location }}
+                            </p>
+                        </div>        
+                    </div>        
                 </div>        
             </div>
         {% endall %}

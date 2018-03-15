@@ -1,4 +1,17 @@
 .subpage--content {
   min-height: 500px;
+  p, ul {
+    font-size: 1.2rem;
+  }
 }
 
+.testimonials {
+  h4 span {
+    color: #929292;
+  }
+  .fa, svg {
+    font-size: 3rem;
+    float: left;
+    margin: 5px 10px 0 0;
+  }
+}
