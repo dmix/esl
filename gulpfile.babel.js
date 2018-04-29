@@ -264,7 +264,7 @@ gulp.task('watch', () => {
 gulp.task('build', gulp.series(
 	gulp.parallel('html', 'blog', 'images', 'fonts', 'css', 'jslib', 'js')
 ))
-   
+
 gulp.task('default', gulp.series(gulp.parallel('build', 'server', 'watch')))
 
 

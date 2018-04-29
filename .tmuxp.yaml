@@ -4,14 +4,14 @@ windows:
   - window_name: gulp
     layout: main-vertical
     panes:
-      - gulp server
-      - gulp build && gulp watch
+      - npm run gulp
+      -
   - window_name: todo
     layout: main-vertical
     focus: true
     panes:
       - nvim TODO.tasks
-      - /usr/bin/open -a "/Applications/Google Chrome.app" 'http://localhost:9000' && nvim ~/notes/esl.md
+      - /usr/bin/open -a "/Applications/Google Chrome Canary.app" 'http://localhost:9000'
   - window_name: editor
     panes:
       - nvim .
