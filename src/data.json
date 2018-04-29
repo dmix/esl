@@ -3,52 +3,85 @@
     {
       "name": "Yantai University",
       "location": "Yantai, Shandong Province, China",
-      "image": "http://school.cucas.edu.cn/uploads/school/2015/0831/1441010802330387.jpg"
-    },
-    {
-      "name": "Shandong Technology and Business University",
-      "location": "Yantai, Shandong Province, China",
-      "image": "http://school.cucas.edu.cn/uploads/school/2014/0827/1409123779267088.jpg"
+      "image": "http://school.cucas.edu.cn/uploads/school/2015/0831/1441010802330387.jpg",
+      "gallery": [
+      ]
     },
     {
       "name": "Chongqing Normal University",
       "location": "Chongqing, China",
-      "image": "http://www.sicas.cn/images/schoollogo/20120116152722872.jpg"
-    },
-    {
-      "name": "Chongqing Technology and Business University",
-      "location": "Chongqing, China",
-      "image": "http://via.placeholder.com/80x80"
-    },
-    {
-      "name": "Hunan Institute of Information Technology",
-      "location": "Changsha, Hunan Province, China",
-      "image": "http://via.placeholder.com/80x80"
-    },
-    {
-      "name": "Liaoning Normal University",
-      "location": "Dalian, Liaoning Province, China",
-      "image": "http://via.placeholder.com/80x80"
-    },
-    {
-      "name": "Dalian Ocean University",
-      "location": "Dalian, Liaoning Province, China",
-      "image": "http://via.placeholder.com/80x80"
-    },
-    {
-      "name": "Henan University of Technology",
-      "location": "Zhengzhou, Henan Province, China",
-      "image": "http://via.placeholder.com/80x80"
+      "image": "http://www.sicas.cn/images/schoollogo/20120116152722872.jpg",
+      "gallery": [
+      ]
     },
     {
       "name": "Henan University of Economics and Law",
       "location": "Zhengzhou, Henan Province, China",
-      "image": "http://via.placeholder.com/80x80"
+      "image": "http://via.placeholder.com/80x80",
+      "gallery": [
+          "1.jpg",
+          "2.jpg",
+          "3.jpg",
+          "4.JPG",
+          "5.JPG",
+          "6.JPG",
+          "7.JPG",
+          "8.JPG",
+          "9.JPG",
+          "10.JPG",
+          "11.jpg",
+          "12.jpg",
+          "13.jpg"
+      ]
+    },
+    {
+      "name": "Henan University of Technology",
+      "location": "Zhengzhou, Henan Province, China",
+      "image": "http://via.placeholder.com/80x80",
+      "gallery": [
+      ]
+    },
+    {
+      "name": "Shandong Technology and Business University",
+      "location": "Yantai, Shandong Province, China",
+      "image": "http://school.cucas.edu.cn/uploads/school/2014/0827/1409123779267088.jpg",
+      "gallery": [
+      ]
+    },
+    {
+      "name": "Chongqing Technology and Business University",
+      "location": "Chongqing, China",
+      "image": "http://via.placeholder.com/80x80",
+      "gallery": [
+      ]
+    },
+    {
+      "name": "Hunan Institute of Information Technology",
+      "location": "Changsha, Hunan Province, China",
+      "image": "http://via.placeholder.com/80x80",
+      "gallery": [
+      ]
+    },
+    {
+      "name": "Liaoning Normal University",
+      "location": "Dalian, Liaoning Province, China",
+      "image": "http://via.placeholder.com/80x80",
+      "gallery": [
+      ]
+    },
+    {
+      "name": "Dalian Ocean University",
+      "location": "Dalian, Liaoning Province, China",
+      "image": "http://via.placeholder.com/80x80",
+      "gallery": [
+      ]
     },
     {
       "name": "Beijing Institute of Petrochemical Technology",
       "location": "Beijing, China",
-      "image": "http://img.timeoutbeijing.com/201702/20170214122812289.jpg"
+      "image": "http://img.timeoutbeijing.com/201702/20170214122812289.jpg",
+      "gallery": [
+      ]
     }
   ]
 }
