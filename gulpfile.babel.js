@@ -125,8 +125,8 @@ gulp.task('html', () => {
                 .use(templates({
                     engine: 'nunjucks',
                     partials: 'src/partials',
-					partialExtension: '.html',
-					pattern: '**/*.html',
+                    partialExtension: '.html',
+                    pattern: '**/*.html',
                 }))
         )
         .on('error', handleError)

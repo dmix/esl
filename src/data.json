@@ -3,7 +3,7 @@
     {
       "name": "Yantai University",
       "location": "Yantai, Shandong Province, China",
-      "image": "http://school.cucas.edu.cn/uploads/school/2015/0831/1441010802330387.jpg",
+      "image": "images/campuses/yantai_university.jpg",
       "gallery": [
 					"images/yantai/1.JPG",
 					"images/yantai/2.jpg",
@@ -32,7 +32,7 @@
     {
       "name": "Chongqing Normal University",
       "location": "Chongqing, China",
-      "image": "http://www.sicas.cn/images/schoollogo/20120116152722872.jpg",
+      "image": "images/campuses/chongqing_normal.jpg",
       "gallery": [
 					"images/chongqing/1.jpg",
 					"images/chongqing/2.JPG",
@@ -78,13 +78,15 @@
       "gallery": [
       ]
     },
+
     {
       "name": "Shandong Technology and Business University",
       "location": "Yantai, Shandong Province, China",
-      "image": "http://school.cucas.edu.cn/uploads/school/2014/0827/1409123779267088.jpg",
+      "image": "images/campuses/shandong_tech.jpeg",
       "gallery": [
       ]
     },
+
     {
       "name": "Chongqing Technology and Business University",
       "location": "Chongqing, China",
@@ -92,31 +94,35 @@
       "gallery": [
       ]
     },
+
     {
       "name": "Hunan Institute of Information Technology",
       "location": "Changsha, Hunan Province, China",
-      "image": "http://via.placeholder.com/80x80",
+      "image": "images/campuses/hunan_science.png",
       "gallery": [
       ]
     },
+
     {
       "name": "Liaoning Normal University",
       "location": "Dalian, Liaoning Province, China",
-      "image": "http://via.placeholder.com/80x80",
+      "image": "images/campuses/liaoning_normal.jpg",
       "gallery": [
       ]
     },
+
     {
       "name": "Dalian Ocean University",
       "location": "Dalian, Liaoning Province, China",
-      "image": "http://via.placeholder.com/80x80",
+      "image": "images/campuses/dalian_ocean.jpg",
       "gallery": [
       ]
     },
+
     {
       "name": "Beijing Institute of Petrochemical Technology",
       "location": "Beijing, China",
-      "image": "http://img.timeoutbeijing.com/201702/20170214122812289.jpg",
+      "image": "images/campuses/bejing_petrochemical.jpg",
       "gallery": [
       ]
     }
