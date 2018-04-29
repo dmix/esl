@@ -23,7 +23,7 @@ With our program operating in ten cities currently, you have the option of teach
     <!--     </h6> -->
     <!-- </div> -->
     <div class="row">
-        {% asyncAll city in data.cities.cities %}
+        {% for city in data.cities.cities %}
             <div class="small-12 medium-6 columns">
                 <div class='location'>
                     <div class='location--block'>
@@ -39,10 +39,15 @@ With our program operating in ten cities currently, you have the option of teach
                                 {{ city.location }}
                             </p>
                         </div>
+                        <div class='location--gallery'>
+                            {% for photo in city.gallery %}
+                                <img class='location--gallery-photo mr2 mb2' src='{{ photo }}' />
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
-        {% endall %}
+        {% endfor %}
     </div>
 </div>
 

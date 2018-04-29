@@ -5,39 +5,76 @@
       "location": "Yantai, Shandong Province, China",
       "image": "http://school.cucas.edu.cn/uploads/school/2015/0831/1441010802330387.jpg",
       "gallery": [
+					"images/yantai/1.JPG",
+					"images/yantai/2.jpg",
+					"images/yantai/3.jpg",
+					"images/yantai/4.jpg",
+					"images/yantai/5.jpg",
+					"images/yantai/6.jpg",
+					"images/yantai/7.jpg",
+					"images/yantai/8.JPG",
+					"images/yantai/9.JPG",
+					"images/yantai/10.JPG",
+					"images/yantai/11.JPG",
+					"images/yantai/12.JPG",
+					"images/yantai/13.JPG",
+					"images/yantai/14.jpg",
+					"images/yantai/15.JPG",
+					"images/yantai/16.jpg",
+					"images/yantai/17.JPG",
+					"images/yantai/18.JPG",
+					"images/yantai/19.JPG",
+					"images/yantai/20.JPG",
+					"images/yantai/21.JPG"
       ]
     },
+
     {
       "name": "Chongqing Normal University",
       "location": "Chongqing, China",
       "image": "http://www.sicas.cn/images/schoollogo/20120116152722872.jpg",
       "gallery": [
+					"images/chongqing/1.jpg",
+					"images/chongqing/2.JPG",
+					"images/chongqing/3.jpg",
+					"images/chongqing/4.JPG",
+					"images/chongqing/5.jpg",
+					"images/chongqing/6.jpg",
+					"images/chongqing/7.jpg",
+					"images/chongqing/8.JPG",
+					"images/chongqing/9.jpg",
+					"images/chongqing/10.jpg",
+					"images/chongqing/11.jpg",
+					"images/chongqing/12.jpg",
+					"images/chongqing/13.jpg"
       ]
     },
+
     {
       "name": "Henan University of Economics and Law",
       "location": "Zhengzhou, Henan Province, China",
-      "image": "http://via.placeholder.com/80x80",
+      "image": "images/campuses/henan_economics.jpg",
       "gallery": [
-          "1.jpg",
-          "2.jpg",
-          "3.jpg",
-          "4.JPG",
-          "5.JPG",
-          "6.JPG",
-          "7.JPG",
-          "8.JPG",
-          "9.JPG",
-          "10.JPG",
-          "11.jpg",
-          "12.jpg",
-          "13.jpg"
+          "images/henan_economics_law/1.jpg",
+          "images/henan_economics_law/2.jpg",
+          "images/henan_economics_law/3.jpg",
+          "images/henan_economics_law/4.JPG",
+          "images/henan_economics_law/5.JPG",
+          "images/henan_economics_law/6.JPG",
+          "images/henan_economics_law/7.JPG",
+          "images/henan_economics_law/8.JPG",
+          "images/henan_economics_law/9.JPG",
+          "images/henan_economics_law/10.JPG",
+          "images/henan_economics_law/11.jpg",
+          "images/henan_economics_law/12.jpg",
+          "images/henan_economics_law/13.jpg"
       ]
     },
+
     {
       "name": "Henan University of Technology",
       "location": "Zhengzhou, Henan Province, China",
-      "image": "http://via.placeholder.com/80x80",
+      "image": "images/campuses/henan_tech.jpg",
       "gallery": [
       ]
     },
@@ -51,7 +88,7 @@
     {
       "name": "Chongqing Technology and Business University",
       "location": "Chongqing, China",
-      "image": "http://via.placeholder.com/80x80",
+      "image": "images/campuses/chongqing_tech.jpg",
       "gallery": [
       ]
     },

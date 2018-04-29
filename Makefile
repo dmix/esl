@@ -23,7 +23,7 @@ watch:
 	@npm run gulp
 
 dev: 
-	@tmuxp ./.tmuxp.yaml
+	@tmuxp load ./.tmuxp.yaml
 
 .PHONY: clean install build watch dev
 .DEFAULT_GOAL := build 
