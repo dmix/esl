@@ -22,7 +22,7 @@ nav {
   // z-index: 7;
   width: 100%;
   background: $theme--nav-bg;
-  border-bottom: $theme--nav-border; 
+  border-bottom: $theme--nav-border;
 }
 
 .top-bar {
@@ -55,8 +55,9 @@ nav {
 .logo {
   .logo--icon {
     display: inline-block;
-    height: 50px;
+    height: 70px;
     margin: -10px 0;
+    margin-right: 5px;
   }
 
   .logo--title {
