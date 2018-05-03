@@ -1,0 +1,37 @@
+{% include "src/partials/_head.html" %}
+
+<body class='subpage'>
+    <!-- Navigation -->
+    <div class='layout-nav'>
+      {% include "src/partials/_nav.html" %}
+    </div>
+
+    <div class='layout-contents'>
+      <!-- Headline Primary  -->
+      <header class='callout large primary headline headline-secondary'>
+          <div class='row column'>
+              <div class='medium-12 columns'>
+                  {% block headline %}{% endblock %}
+              </div>
+          </div>
+      </header>
+
+      <!-- Contents -->
+      <article>
+          <section class="row" id="content">
+              <main class="medium-12 columns subpage-content">
+                {% block content %}{% endblock %}
+              </main>
+          </section>
+      </article>
+    </div>
+
+    <!-- Footer -->
+    <div class='layout-footer'>
+      {% include "src/partials/_footer.html" %}
+    </div>
+
+    <!-- Javascript -->
+    {% include "src/partials/_scripts.html" %}
+</body>
+</html>
