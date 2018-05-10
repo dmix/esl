@@ -94,7 +94,7 @@ gulp.task('jslib', () => {
 
 gulp.task('js', () => {
     return gulp.src(jsSource)
-        .pipe(_.concat('fortedefence.js'))
+        .pipe(_.concat('esl.js'))
         .pipe(_.uglify())
         .on('error', handleError)
         .pipe(gulp.dest(output + '/js'))
