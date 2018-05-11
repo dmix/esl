@@ -9,7 +9,9 @@ _ENV=production
 # -- Helpers
 
 clean:
-	@rm **/.DS_Store .DS_Store
+	@rm .DS_Store **/.DS_Store
+	@rm -rf ./build/
+	@mkdir ./build/
 
 install:
 	@sudo gem install scss-lint bundler
@@ -31,10 +33,8 @@ server:
 run:
 	@npm run gulp
 
-deploy:
+deploy: clean
 	npm run gulp deploy
-	cp -rf build/* ../dmix.github.io/
-	@echo "Reminder: Update PDF called DanielMcGrady_Resume.pdf"
 
 .PHONY: install clean build watch dev server run deploy
 .DEFAULT_GOAL := run

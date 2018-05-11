@@ -262,6 +262,10 @@ gulp.task('watch', () => {
 })
 
 gulp.task('build', gulp.series(
+	gulp.parallel('html', 'css', 'jslib', 'js')
+))
+
+gulp.task('deploy', gulp.series(
 	gulp.parallel('html', 'blog', 'images', 'fonts', 'css', 'jslib', 'js')
 ))
 

@@ -4,35 +4,6 @@
   "cta": "Apply to Teach",
   "cities": [
     {
-      "name": "Yantai University",
-      "location": "Yantai, Shandong Province, China",
-      "image": "img/campuses/yantai_university.jpg",
-      "gallery": [
-					"img/yantai/1.JPG",
-					"img/yantai/2.jpg",
-					"img/yantai/3.jpg",
-					"img/yantai/4.jpg",
-					"img/yantai/5.jpg",
-					"img/yantai/6.jpg",
-					"img/yantai/7.jpg",
-					"img/yantai/8.JPG",
-					"img/yantai/9.JPG",
-					"img/yantai/10.JPG",
-					"img/yantai/11.JPG",
-					"img/yantai/12.JPG",
-					"img/yantai/13.JPG",
-					"img/yantai/14.jpg",
-					"img/yantai/15.JPG",
-					"img/yantai/16.jpg",
-					"img/yantai/17.JPG",
-					"img/yantai/18.JPG",
-					"img/yantai/19.JPG",
-					"img/yantai/20.JPG",
-					"img/yantai/21.JPG"
-      ]
-    },
-
-    {
       "name": "Chongqing Normal University",
       "location": "Chongqing, China",
       "image": "img/campuses/chongqing_normal.jpg",
@@ -50,6 +21,18 @@
         "img/chongqing_normal/11.jpg",
         "img/chongqing_normal/12.jpg",
         "img/chongqing_normal/13.jpg"
+      ]
+    },
+
+    {
+      "name": "Chongqing Technology and Business University",
+      "location": "Chongqing, China",
+      "image": "img/campuses/chongqing_tech.jpg",
+      "gallery": [
+        "img/chongqing_tech/1.jpg",
+        "img/chongqing_tech/2.jpg",
+        "img/chongqing_tech/3.jpg",
+        "img/chongqing_tech/4.jpg"
       ]
     },
 
@@ -97,26 +80,6 @@
     },
 
     {
-      "name": "Shandong Technology and Business University",
-      "location": "Yantai, Shandong Province, China",
-      "image": "img/campuses/shandong_tech.jpeg",
-      "gallery": [
-      ]
-    },
-
-    {
-      "name": "Chongqing Technology and Business University",
-      "location": "Chongqing, China",
-      "image": "img/campuses/chongqing_tech.jpg",
-      "gallery": [
-        "img/chongqin_tech/1.jpg",
-        "img/chongqin_tech/2.jpg",
-        "img/chongqin_tech/3.jpg",
-        "img/chongqin_tech/4.jpg"
-      ]
-    },
-
-    {
       "name": "Hunan Institute of Information Technology",
       "location": "Changsha, Hunan Province, China",
       "image": "img/campuses/hunan_science.png",
@@ -131,9 +94,9 @@
     },
 
     {
-      "name": "Liaoning Normal University",
-      "location": "Dalian, Liaoning Province, China",
-      "image": "img/campuses/liaoning_normal.jpg",
+      "name": "Hunan University of Commerce",
+      "location": "Changsha, China",
+      "image": "img/campuses/hunan_commerce.jpg",
       "gallery": [
       ]
     },
@@ -154,17 +117,6 @@
     },
 
     {
-      "name": "Beijing Institute of Petrochemical Technology",
-      "location": "Beijing, China",
-      "image": "img/campuses/bejing_petrochemical.jpg",
-      "gallery": [
-        "img/bejing_pertrochemical/1.jpg",
-        "img/bejing_pertrochemical/2.jpg",
-        "img/bejing_pertrochemical/3.jpg"
-      ]
-    },
-
-    {
       "name": "Dalian University of Foreign Languages",
       "location": "Dalian, China",
       "image": "img/campuses/dalian_foreign.jpg",
@@ -173,11 +125,60 @@
     },
 
     {
-      "name": "Hunan University of Commerce",
-      "location": "Changsha, China",
-      "image": "img/campuses/hunan_commerce.jpg",
+      "name": "Yantai University",
+      "location": "Yantai, Shandong Province, China",
+      "image": "img/campuses/yantai_university.jpg",
+      "gallery": [
+					"img/yantai/1.JPG",
+					"img/yantai/2.jpg",
+					"img/yantai/3.jpg",
+					"img/yantai/4.jpg",
+					"img/yantai/5.jpg",
+					"img/yantai/6.jpg",
+					"img/yantai/7.jpg",
+					"img/yantai/8.JPG",
+					"img/yantai/9.JPG",
+					"img/yantai/10.JPG",
+					"img/yantai/11.JPG",
+					"img/yantai/12.JPG",
+					"img/yantai/13.JPG",
+					"img/yantai/14.jpg",
+					"img/yantai/15.JPG",
+					"img/yantai/16.jpg",
+					"img/yantai/17.JPG",
+					"img/yantai/18.JPG",
+					"img/yantai/19.JPG",
+					"img/yantai/20.JPG",
+					"img/yantai/21.JPG"
+      ]
+    },
+
+    {
+      "name": "Beijing Institute of Petrochemical Technology",
+      "location": "Beijing, China",
+      "image": "img/campuses/bejing_petrochemical.jpg",
+      "gallery": [
+        "img/bejing_petrochemical/1.jpg",
+        "img/bejing_petrochemical/2.jpg",
+        "img/bejing_petrochemical/3.jpg"
+      ]
+    },
+
+    {
+      "name": "Liaoning Normal University",
+      "location": "Dalian, Liaoning Province, China",
+      "image": "img/campuses/liaoning_normal.jpg",
+      "gallery": [
+      ]
+    },
+
+    {
+      "name": "Shandong Technology and Business University",
+      "location": "Yantai, Shandong Province, China",
+      "image": "img/campuses/shandong_tech.jpeg",
       "gallery": [
       ]
     }
+
   ]
 }
