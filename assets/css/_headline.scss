@@ -2,8 +2,9 @@
   &.headline {
     border: none;
     overflow: hidden;
+    padding: 0px 40px;
     h1, h3 {
-      font-family: $font-family-primary; 
+      font-family: $font-family-primary;
       letter-spacing: -2px;
       span {
         color: #749aaf;
@@ -35,6 +36,7 @@
       background-color: $primary-color;
     }
   }
+
   &.headline.headline--primary {
     padding: 10rem 0 9rem;
     border-bottom: 1px solid #f2f2f2;
@@ -46,6 +48,12 @@
       margin-bottom: 2rem;
     }
   }
+
+  &.headline.headline--primary.headline--cover {
+    // background: url(./img/chalk2.jpg) no-repeat center;
+    // background-size: cover;
+  }
+
   &.headline.headline--secondary {
     background-color: $theme--headline-secondary-bg;
     border-bottom: $theme--headline-secondary-border;

@@ -1,39 +1,24 @@
-{% include 'src/partials/_head.html' %}
+<!doctype html>
+<html class='no-js' lang='en'>
+    {% include 'src/partials/_head.html' %}
 
-<body class='layout app'>
-    <div class='layout--nav'>
-      <!-- Navigation -->
-      {% include 'src/partials/_nav.html' %}
-    </div>
+    <body class='layout app'>
+        <div class='layout--nav'>
+          <!-- Navigation -->
+          {% include 'src/partials/_nav.html' %}
+        </div>
 
-    <div class='layout--contents'>
-      <!-- Headline Primary  -->
-      <header class='callout large primary headline headline--primary'>
-          <div class='row align-middle'>
-            <div class='medium-8 columns'>
-                  {% block headline %}{% endblock %}
-                  <a class='button large' href='apply.html'>{% block cta %}{% endblock %}</a>
-                  <a href='#' class='clear button secondary' href='/teaching.html'>Learn More &rarr;</a>
-              </div>
-              <div class='medium-4 columns'>
-                <img src='img/chalk.jpg' style='width: 100%; display: inline-block'>
-              </div>
-          </div>
-      </header>
+        <div class='layout--contents'>
+          <!-- Contents -->
+          {% block content %}{% endblock %}
+        </div>
 
-      <!-- Highlights Box -->
-      {% include 'src/partials/_highlights.html' %}
+        <!-- Footer -->
+        <div class='layout--footer'>
+          {% include 'src/partials/_footer.html' %}
+        </div>
 
-      <!-- Contents -->
-      {% block content %}{% endblock %}
-    </div>
-
-    <!-- Footer -->
-    <div class='layout--footer'>
-      {% include 'src/partials/_footer.html' %}
-    </div>
-
-    <!-- Javascript -->
-    {% include 'src/partials/_scripts.html' %}
-</body>
+        <!-- Javascript -->
+        {% include 'src/partials/_scripts.html' %}
+    </body>
 </html>

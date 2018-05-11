@@ -4,25 +4,25 @@ title: Teach English in China
 
 {% extends 'src/layouts/homepage.html' %}
 
-{% block headline %}
-    <h1>Teach English in China</h1>
-    <h3>
-        Build upon your current teaching resume by teaching English at a
-        renowned Chinese university while living in a bustling, world-class
-        metropolis.
-    </h3>
-{% endblock %}
-
-{% block cta %}
-    Apply to Teach
-{% endblock %}
-
 {% block content %}
+    <header>
+        <!-- Headline Banner -->
+        {% include 'src/homepage/_banner.html' %}
+
+        <!-- Highlights Box -->
+        {% include 'src/homepage/_highlights.html' %}
+    </header>
+
     <article>
         <section class='row' id='content'>
             <main class='medium-12 column'>
+                <!-- 3x info boxes -->
                 {% include "src/homepage/_three_up.html" %}
+
+                <!-- About + Locations boxes -->
                 {% include "src/homepage/_information.html" %}
+
+                <!-- 4x Testimonials -->
                 {% include "src/homepage/_testimonials.html" %}
             </main>
         </section>
