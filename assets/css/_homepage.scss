@@ -83,9 +83,14 @@ $testimonial-bg: $testimonial-light-blue;
   }
 
   .homepage--testimonial-avatar {
-    border-radius: 50%;
+    border-radius: 100rem;
     width: 60px;
     height: 60px;
+    background: #ccc;
+    color: #525252;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5px;
   }
 
   .homepage--testimonial-name {
