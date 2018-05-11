@@ -37,19 +37,19 @@
       "location": "Chongqing, China",
       "image": "img/campuses/chongqing_normal.jpg",
       "gallery": [
-					"img/chongqing/1.jpg",
-					"img/chongqing/2.JPG",
-					"img/chongqing/3.jpg",
-					"img/chongqing/4.JPG",
-					"img/chongqing/5.jpg",
-					"img/chongqing/6.jpg",
-					"img/chongqing/7.jpg",
-					"img/chongqing/8.JPG",
-					"img/chongqing/9.jpg",
-					"img/chongqing/10.jpg",
-					"img/chongqing/11.jpg",
-					"img/chongqing/12.jpg",
-					"img/chongqing/13.jpg"
+        "img/chongqing_normal/1.jpg",
+        "img/chongqing_normal/2.JPG",
+        "img/chongqing_normal/3.jpg",
+        "img/chongqing_normal/4.JPG",
+        "img/chongqing_normal/5.jpg",
+        "img/chongqing_normal/6.jpg",
+        "img/chongqing_normal/7.jpg",
+        "img/chongqing_normal/8.JPG",
+        "img/chongqing_normal/9.jpg",
+        "img/chongqing_normal/10.jpg",
+        "img/chongqing_normal/11.jpg",
+        "img/chongqing_normal/12.jpg",
+        "img/chongqing_normal/13.jpg"
       ]
     },
 
@@ -79,6 +79,20 @@
       "location": "Zhengzhou, Henan Province, China",
       "image": "img/campuses/henan_tech.jpg",
       "gallery": [
+        "img/henan_tech/1.JPG",
+        "img/henan_tech/2.jpg",
+        "img/henan_tech/3.JPG",
+        "img/henan_tech/4.jpg",
+        "img/henan_tech/5.jpg",
+        "img/henan_tech/6.JPG",
+        "img/henan_tech/7.JPG",
+        "img/henan_tech/8.jpg",
+        "img/henan_tech/9.jpg",
+        "img/henan_tech/10.JPG",
+        "img/henan_tech/11.jpg",
+        "img/henan_tech/12.jpg",
+        "img/henan_tech/13.jpg",
+        "img/henan_tech/14.jpg"
       ]
     },
 
@@ -95,6 +109,10 @@
       "location": "Chongqing, China",
       "image": "img/campuses/chongqing_tech.jpg",
       "gallery": [
+        "img/chongqin_tech/1.jpg",
+        "img/chongqin_tech/2.jpg",
+        "img/chongqin_tech/3.jpg",
+        "img/chongqin_tech/4.jpg"
       ]
     },
 
@@ -103,6 +121,12 @@
       "location": "Changsha, Hunan Province, China",
       "image": "img/campuses/hunan_science.png",
       "gallery": [
+        "img/hunan_tech/1.png",
+        "img/hunan_tech/2.png",
+        "img/hunan_tech/3.png",
+        "img/hunan_tech/4.png",
+        "img/hunan_tech/5.png",
+        "img/hunan_tech/6.png"
       ]
     },
 
@@ -119,6 +143,13 @@
       "location": "Dalian, Liaoning Province, China",
       "image": "img/campuses/dalian_ocean.jpg",
       "gallery": [
+        "img/dalian_ocean/1.jpg",
+        "img/dalian_ocean/2.jpg",
+        "img/dalian_ocean/3.jpg",
+        "img/dalian_ocean/4.jpg",
+        "img/dalian_ocean/5.jpg",
+        "img/dalian_ocean/6.jpg",
+        "img/dalian_ocean/7.jpg"
       ]
     },
 
@@ -126,6 +157,25 @@
       "name": "Beijing Institute of Petrochemical Technology",
       "location": "Beijing, China",
       "image": "img/campuses/bejing_petrochemical.jpg",
+      "gallery": [
+        "img/bejing_pertrochemical/1.jpg",
+        "img/bejing_pertrochemical/2.jpg",
+        "img/bejing_pertrochemical/3.jpg"
+      ]
+    },
+
+    {
+      "name": "Dalian University of Foreign Languages",
+      "location": "Dalian, China",
+      "image": "img/campuses/dalian_foreign.jpg",
+      "gallery": [
+      ]
+    },
+
+    {
+      "name": "Hunan University of Commerce",
+      "location": "Changsha, China",
+      "image": "img/campuses/hunan_commerce.jpg",
       "gallery": [
       ]
     }
