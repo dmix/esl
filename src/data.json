@@ -2,6 +2,14 @@
   "headline": "Teach English in China",
   "subheadline": "Build upon your current teaching resume by teaching English at renowned Chinese university while living in a bustling, world-class metropolis.",
   "cta": "Apply to Teach",
+  "gallery": [
+    "img/chongqing_normal/1.jpg",
+    "img/chongqing_normal/2.JPG",
+    "img/chongqing_tech/1.jpg",
+    "img/chongqing_tech/2.jpg",
+    "img/hunan_tech/1.png",
+    "img/hunan_tech/2.png"
+  ],
   "cities": [
     {
       "name": "Chongqing Normal University",

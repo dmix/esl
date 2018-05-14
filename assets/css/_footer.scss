@@ -16,9 +16,19 @@ $footer-logo-bg: #f1f1f1;
     width: 75px;
     overflow: hidden;
 
-    img {
-      height: 75px;
+    a {
+      img {
+        display: block;
+        height: 75px;
+      }
     }
+  }
+
+  .footer--gallery-view {
+    margin-top: -20px;
+    margin-left: 15px;
+    font-size: .9rem;
+    color: white;
   }
 
   .column-block {

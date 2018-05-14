@@ -55,24 +55,12 @@
             <div class='medium-4 columns'>
                 <h4 class='footer--title'>Gallery</h4>
                 <div class='row small-up-3 footer--gallery'>
-                    <div class='column column-block footer--galley-box'>
-                        <img src='http://i345.photobucket.com/albums/p383/educationinenglish/1_zpswokxvcst.jpg'  />
-                    </div>
-                    <div class='column column-block footer--galley-box'>
-                        <img src=http://i345.photobucket.com/albums/p383/educationinenglish/4_zpserefhzan.jpg'   />
-                    </div>
-                    <div class='column column-block footer--galley-box'>
-                        <img src='http://i345.photobucket.com/albums/p383/educationinenglish/12_zpsrvjwqwgn.jpg' />
-                    </div>
-                    <div class='column column-block footer--galley-box'>
-                        <img src='http://i345.photobucket.com/albums/p383/educationinenglish/13_zpsuhww76d6.jpg' />
-                    </div>
-                    <div class='column column-block footer--galley-box'>
-                        <img src='http://i345.photobucket.com/albums/p383/educationinenglish/12_zpsrgfwwfcb.jpg' />
-                    </div>
-                    <div class='column column-block footer--galley-box'>
-                        <img src='http://i345.photobucket.com/albums/p383/educationinenglish/2_zpsnhl35knh.jpg'  />
-                    </div>
+                    {% for photo in data.cities.gallery  %}
+                        <div class='column column-block footer--gallery-box'>
+                          <a href='{{ photo }}' target='_blank'><img src='{{ photo }}' /></a>
+                        </div>
+                    {% endfor %}
+                    <a href='/gallery.html' class='footer--gallery-view'>View Gallery &rarr;</a>
                 </div>
             </div>
         </div>
