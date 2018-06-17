@@ -82,7 +82,20 @@
               <section class='row' id='content'>
                   <main class='medium-12 columns subpage--content'>
                       
-<p>Coming soon...</p>
+<form name="contact" netlify-honeypot="bot-field" method="POST" action="thank-you" netlify>
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+  </p>
+  <p>
+    <label>Email: <input type="text" name="name"></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type=”submit”>Send</button>
+  </p>
+</form>
 
                   </main>
               </section>
