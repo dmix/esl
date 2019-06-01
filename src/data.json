@@ -45,23 +45,16 @@
     },
 
     {
-      "name": "Henan University of Economics and Law",
-      "location": "Zhengzhou, Henan Province, China",
-      "image": "img/campuses/henan_economics.jpg",
+      "name": "Hainan University",
+      "location": "Haikou, Hainan, China",
+      "image": "img/campuses/hainan_university.jpeg",
       "gallery": [
-          "img/henan_economics_law/1.jpg",
-          "img/henan_economics_law/2.jpg",
-          "img/henan_economics_law/3.jpg",
-          "img/henan_economics_law/4.JPG",
-          "img/henan_economics_law/5.JPG",
-          "img/henan_economics_law/6.JPG",
-          "img/henan_economics_law/7.JPG",
-          "img/henan_economics_law/8.JPG",
-          "img/henan_economics_law/9.JPG",
-          "img/henan_economics_law/10.JPG",
-          "img/henan_economics_law/11.jpg",
-          "img/henan_economics_law/12.jpg",
-          "img/henan_economics_law/13.jpg"
+        "img/hainan_university/1.png",
+        "img/hainan_university/2.jpg",
+        "img/hainan_university/3.jpg",
+        "img/hainan_university/4.jpeg",
+        "img/hainan_university/5.jpg",
+        "img/hainan_university/6.jpg"
       ]
     },
 
@@ -88,20 +81,6 @@
     },
 
     {
-      "name": "Hunan Institute of Information Technology",
-      "location": "Changsha, Hunan Province, China",
-      "image": "img/campuses/hunan_science.png",
-      "gallery": [
-        "img/hunan_tech/1.png",
-        "img/hunan_tech/2.png",
-        "img/hunan_tech/3.png",
-        "img/hunan_tech/4.png",
-        "img/hunan_tech/5.png",
-        "img/hunan_tech/6.png"
-      ]
-    },
-
-    {
       "name": "Hunan University of Commerce",
       "location": "Changsha, China",
       "image": "img/campuses/hunan_commerce.jpg",
@@ -121,14 +100,6 @@
         "img/dalian_ocean/5.jpg",
         "img/dalian_ocean/6.jpg",
         "img/dalian_ocean/7.jpg"
-      ]
-    },
-
-    {
-      "name": "Dalian University of Foreign Languages",
-      "location": "Dalian, China",
-      "image": "img/campuses/dalian_foreign.jpg",
-      "gallery": [
       ]
     },
 
